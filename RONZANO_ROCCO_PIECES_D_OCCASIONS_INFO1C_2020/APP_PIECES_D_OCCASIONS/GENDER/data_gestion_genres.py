@@ -2,20 +2,20 @@
 # OM 2020.04.09 Permet de gérer (CRUD) les données de la table t_genres
 from flask import flash
 
-from APP_FILMS.DATABASE.connect_db_context_manager import MaBaseDeDonnee
-from APP_FILMS.DATABASE.erreurs import *
+from APP_PIECES_D_OCCASIONS.DATABASE.connect_db_context_manager import MaBaseDeDonnee
+from APP_PIECES_D_OCCASIONS.DATABASE.erreurs import *
 
 
 class GestionGenres():
     def __init__(self):
         try:
             # DEBUG bon marché : Pour afficher un message dans la console.
-            print("dans le try de gestions genres")
+            print("dans le try de gestions GENDERS")
             # OM 2020.04.11 La connexion à la base de données est-elle active ?
             # Renvoie une erreur si la connexion est perdue.
             MaBaseDeDonnee().connexion_bd.ping(False)
         except Exception as erreur:
-            flash("Dans Gestion genres ...terrible erreur, il faut connecter une base de donnée", "Danger")
+            flash("Dans Gestion GENDERS ...terrible erreur, il faut connecter une base de donnée", "Danger")
             # DEBUG bon marché : Pour afficher un message dans la console.
             print(f"Exception grave Classe constructeur GestionGenres {erreur.args[0]}")
             # Ainsi on peut avoir un message d'erreur personnalisé.
@@ -28,7 +28,7 @@ class GestionGenres():
             # la commande MySql classique est "SELECT * FROM t_genres"
             # Pour "lever"(raise) une erreur s'il y a des erreurs sur les noms d'attributs dans la table
             # donc, je précise les champs à afficher
-            strsql_genres_afficher = """SELECT id_genre, intitule_genre FROM t_genres ORDER BY id_genre ASC"""
+            strsql_genres_afficher = """SELECT id_gender, intitule_genre FROM t_gender ORDER BY id_gender ASC"""
             # Du fait de l'utilisation des "context managers" on accède au curseur grâce au "with".
             with MaBaseDeDonnee().connexion_bd.cursor() as mc_afficher:
                 # Envoi de la commande MySql
@@ -54,7 +54,7 @@ class GestionGenres():
         try:
             print(valeurs_insertion_dictionnaire)
             # OM 2020.04.07 C'EST LA QUE VOUS ALLEZ DEVOIR PLACER VOTRE PROPRE LOGIQUE MySql
-            strsql_insert_genre = """INSERT INTO t_genres (id_genre,intitule_genre) VALUES (NULL,%(value_intitule_genre)s)"""
+            strsql_insert_genre = """INSERT INTO t_gender (id_genre,intitule_genre) VALUES (NULL,%(value_intitule_genre)s)"""
             # Du fait de l'utilisation des "context managers" on accède au curseur grâce au "with".
             # la subtilité consiste à avoir une méthode "mabd_execute" dans la classe "MaBaseDeDonnee"
             # ainsi quand elle aura terminé l'insertion des données le destructeur de la classe "MaBaseDeDonnee"

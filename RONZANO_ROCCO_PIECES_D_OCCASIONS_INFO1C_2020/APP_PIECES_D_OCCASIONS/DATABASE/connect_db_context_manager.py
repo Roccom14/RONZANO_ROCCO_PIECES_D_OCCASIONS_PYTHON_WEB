@@ -10,7 +10,7 @@
 # Si on utilise MAMP il faut choisir import mysql.connector
 # https://dev.mysql.com/downloads/connector/python/
 import pymysql
-from APP_FILMS.DATABASE.erreurs import *
+from APP_PIECES_D_OCCASIONS.DATABASE.erreurs import *
 # Petits messages "flash", échange entre Python et Jinja dans une page en HTML
 from flask import flash
 
@@ -21,7 +21,7 @@ class MaBaseDeDonnee():
         self.host = '127.0.0.1'
         self.user = 'root'
         self.password = 'root'
-        self.db = "NOM_PRENOM_SUJET_BD_104_2020"
+        self.db = "ronzano_rocco_pieces_d_occasions_info1c_2020"
 
         self.connexion_bd = None
         try:
