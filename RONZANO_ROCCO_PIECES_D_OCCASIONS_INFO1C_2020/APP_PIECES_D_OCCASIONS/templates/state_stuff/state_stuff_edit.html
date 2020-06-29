@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Editer un state_stuff{% endblock %}
+{% block body %}
+    <div class="home">
+        <div class="col-md-12">
+            <center>
+                <form method="POST" action="{{ url_for('state_stuff_update') }}">
+                    <table cellpadding="7">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>State stuff</th>
+                            </tr>
+                        </thead>
+                        {% for row in data %}
+                            <tr>
+                                <td><input type="hidden" name="id_state_stuff_edit_html" value="{{ row.id_state_stuff }}"/></td>
+                                <td><input type = "text" name = "name_edit_state_stuff_html" value="{{ row.state_stuff }}"/></td>
+                                <td><button class="btn btn-warning" type="submit">Update</button></td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </form>
+            </center>
+        </div>
+    </div>
+{% endblock %}

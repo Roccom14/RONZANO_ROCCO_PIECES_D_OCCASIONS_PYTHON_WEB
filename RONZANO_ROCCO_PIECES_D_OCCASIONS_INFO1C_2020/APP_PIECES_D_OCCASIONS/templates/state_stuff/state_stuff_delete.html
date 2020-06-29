@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}supprimer un state_stuff{% endblock %}
+{% block body %}
+    <div class="home">
+        <center>
+            <div class="col-md-12">
+                <form method="POST" action="{{ url_for('state_stuff_delete') }}">
+                    <table cellpadding="7">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>State stuff</th>
+                            </tr>
+                        </thead>
+                        {% for row in data %}
+                            <tr>
+                                <td><input type="hidden" name="id_state_stuff_delete_html" value="{{ row.id_state_stuff }}"></td>
+                                <td>{{ row.state_stuff }}</td>
+                                <td><button class="btn btn-danger" type="submit">EFFACER</button></td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </form>
+            </div>
+        </center>
+    </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %} Afficher GENRES {% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="col-md-12">
+            <table class="table table-bordered table-sm">
+                {% if data %}
+                    <thead>
+                        <tr>
+                            <th class="align-middle">ID</th>
+                            <th class="align-middle">Genre</th>
+                        </tr>
+                    </thead>
+                {% endif %}
+
+                {% for row in data %}
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">{{ row.id_gender }}</td>
+                            <td class="align-middle">{{ row.gender }}</td>
+                            <td class="align-middle"><a class="btn btn-primary" href="{{ url_for('genders_add') }}" role="button">Ajouter</a></td>
+                            <td class="align-middle"><a class="btn btn-warning" href="{{ url_for('genders_edit', id_gender_edit_html=row.id_gender) }}" role="button">Editer</a></td>
+                            <td class="align-middle"><a class="btn btn-danger" href="{{ url_for('genders_select_delete', id_gender_delete_html=row.id_gender) }}" role="button">Supprimer</a></td>
+                        </tr>
+                    </tbody>
+                {% else %}
+                    <tbody>
+                        <tr>
+                            <td>Aucun genre.</td>
+                            <td><a class="btn btn-primary" href="{{ url_for('genders_add') }}" role="button">Ajouter</a></td>
+                        </tr>
+                    </tbody>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}
+

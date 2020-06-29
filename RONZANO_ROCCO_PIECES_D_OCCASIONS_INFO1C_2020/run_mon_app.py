@@ -4,7 +4,7 @@
 # Des routes différentes sont définies
 # Le retour des données se fait grâce à une page en HTML et le langage JINJA
 # Avec le traitement de certaines erreurs.
-# Ne pas abuser du try..except car il prend un peu plus de temps qu'un if (test classique)
+# Ne pas abuser du try..except car il est moins rapide qu'un if (test classique)
 # Une petite démo se trouve sur ce site :
 # https://www.datacamp.com/community/tutorials/exception-handling-python
 
@@ -24,7 +24,7 @@ def page_not_found(e):
 # les erreurs "try...execpt" dans la page "home.html"
 @obj_mon_application.errorhandler(Exception)
 def om_104_exception_handler(error):
-    flash(error, "Danger")
+    flash(error, "danger")
     return render_template("home.html")
 
 
@@ -49,6 +49,8 @@ def key_error(error):
 
 
 if __name__ == "__main__":
+    # __name__ garantit que la méthode run() est appelée uniquement lorsque main.py est exécuté en tant que programme principal.
+    # La méthode run() ne sera pas appelée si vous importez main.py dans un autre module Python.
     # C'est bien le script principal "__main__" donc on l'interprète (démarre la démo d'utilisation de Flask).
     # Pour montrer qu'on peut paramétrer Flask :
     # On active le mode DEBUG
@@ -57,4 +59,4 @@ if __name__ == "__main__":
     print("obj_mon_application.url_map ____> ", obj_mon_application.url_map)
     obj_mon_application.run(debug=True,
                             host="127.0.0.1",
-                            port="1234")
+                            port="5005")

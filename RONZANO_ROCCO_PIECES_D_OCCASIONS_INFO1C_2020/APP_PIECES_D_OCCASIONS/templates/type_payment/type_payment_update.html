@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}UPDATE TYPE_PAYMENT{% endblock %}
+{% block content %}
+    <div class="home">
+        <form method="POST" action="{{ url_for('type_payment_update') }}">
+            <table cellpadding="7" cellspacing="5">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Type Payment</th>
+                    </tr>
+                </thead>
+                {% for row in data %}
+                    <tr>
+                        <td><input type="hidden" name="idSCat" value="{{ row.id_type_payment }}"></td>
+                        <td><input type = "text" name = "name_edit_type_payment_html" value="{{ row.type_payment }}"/></td>
+                        <td><button class="btn btn-warning" type="submit">Update</button></td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </form>
+    </div>
+{% endblock %}

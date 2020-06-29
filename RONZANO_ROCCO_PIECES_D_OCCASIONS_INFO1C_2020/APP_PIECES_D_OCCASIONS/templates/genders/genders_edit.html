@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Editer un GENRE{% endblock %}
+{% block body %}
+    <div class="home">
+        <center>
+            <form method="POST" action="{{ url_for('genders_update') }}">
+                <table cellpadding="7">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Genre</th>
+                        </tr>
+                    </thead>
+                    {% for row in data %}
+                        <tr>
+                            <td><input type="hidden" name="id_gender_edit_html" value="{{ row.id_gender }}"/></td>
+                            <td><input type = "text" name = "name_edit_gender_html" value="{{ row.gender }}"/></td>
+                            <td><button class="btn btn-warning" type="submit">Update</button></td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </form>
+        </center>
+    </div>
+{% endblock %}

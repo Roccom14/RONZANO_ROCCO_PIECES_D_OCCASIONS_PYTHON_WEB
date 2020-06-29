@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Supprimer un USER{% endblock %}
+{% block body %}
+    <div class="home">
+        <div class="col-md-12">
+            <form method="POST" action="{{ url_for('user_delete') }}">
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Prénom</th>
+                            <th>Nom</th>
+                            <th>Mail</th>
+                            <th>Phone</th>
+                            <th>Adresse</th>
+                            <th>Ville</th>
+                            <th>NPA</th>
+                            <th>Genre</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    {% for row in data %}
+                        <tr>
+                            <td><input type="hidden" name="id_user_delete_html" value="{{ row.id_user }}"></td>
+                            <td>{{ row.firstname_user|default("", True) }}</td>
+                            <td>{{ row.lastname_user|default("", True) }}</td>
+                            <td>{{ row.mail|default("", True) }}</td>
+                            <td>{{ row.phone|default("", True) }}</td>
+                            <td>{{ row.address|default("", True) }}</td>
+                            <td>{{ row.city|default("", True) }}</td>
+                            <td>{{ row.npa|default("", True) }}</td>
+                            <td>{{ row.gender|default("", True) }}</td>
+                            <td>{{ row.date_user|default("", True) }}</td>
+                            <td><button class="btn btn-danger" type="submit">EFFACER</button></td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </form>
+        </div>
+    </div>
+{% endblock %}

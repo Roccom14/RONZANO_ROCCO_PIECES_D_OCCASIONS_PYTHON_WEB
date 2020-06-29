@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %} Ajouter un USER{% endblock %}
+{% block body %}
+    <div class="home">
+        <div class="col-md-12">
+            <form method="POST" action="">
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Prénom</th>
+                            <th>Nom</th>
+                            <th>Mail</th>
+                            <th>Téléphone</th>
+                            <th>Adresse</th>
+                            <th>Ville</th>
+                            <th>NPA</th>
+                            <th>Genre</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td></td>
+                            <td><input type = "text" name= "firstname_user_html"/></td>
+                            <td><input type = "text" name= "lastname_user_html"/></td>
+                            <td><input type = "email" name= "mail_html"/></td>
+                            <td><input type = "tel" name= "phone_html"/></td>
+                            <td><input type = "text" name= "address_html"/></td>
+                            <td><input type = "text" name= "city_html"/></td>
+                            <td><input type = "text" name= "npa_html"/></td>
+                            <td>
+                                <div>
+                                    <select name="gender_select">
+                                        {% for row in data_genders %}
+                                            <option value="{{ row.id_gender }}">{{ row.gender }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </td>
+                            <td><input type = "date" name= "date_user_html"/></td>
+                            <td><button class="btn btn-primary" type="submit">Ajouter</button></td>
+                        </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+{% endblock %}

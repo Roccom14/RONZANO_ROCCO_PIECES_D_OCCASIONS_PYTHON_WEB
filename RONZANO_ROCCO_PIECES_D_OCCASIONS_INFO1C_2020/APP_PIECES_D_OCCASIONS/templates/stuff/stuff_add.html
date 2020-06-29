@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %} Ajouter un STUFF{% endblock %}
+{% block body %}
+    <div class="home">
+        <form method="POST" action="">
+            <table cellpadding="7" cellspacing="5">
+                <thead>
+                    <tr>
+                        <th class="align-middle">ID</th>
+                        <th class="align-middle">Nom</th>
+                        <th class="align-middle">Description</th>
+                        <th class="align-middle">Prix</th>
+                        <th class="align-middle">Type</th>
+                        <th class="align-middle">Quantité</th>
+                        <th class="align-middle">Appartenance</th>
+                        <th class="align-middle">Etat</th>
+                        <th class="align-middle">Type Payement</th>
+                        <th class="align-middle">Date d'ajout</th>
+                        <th class="align-middle">Date d'achat</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td></td>
+                        <td><input type = "text" name= "name_stuff_html"/></td>
+                        <td><input type = "text" name= "description_stuff_html"/></td>
+                        <td><input type = "text" name= "price_stuff_html"/></td>
+                        <td><input type = "text" name= "type_stuff_html"/></td>
+                        <td><input type = "text" name= "quantity_stuff_html"/></td>
+                        <td>
+                            <div>
+                                <select name="user_select">
+                                    {% for row in data_user %}
+                                        <option value="{{ row.id_user }}">{{ row.firstname_user }} {{ row.lastname_user }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <select name="state_stuff_select">
+                                    {% for row in data_state_stuff %}
+                                        <option value="{{ row.id_state_stuff }}">{{ row.state_stuff }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <select name="type_payment_select">
+                                    {% for row in data_type_payment %}
+                                        <option value="{{ row.id_payment }}">{{ row.type_payment }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </td>
+                        <td><input type = "date" name= "date_add_stuff_html"/></td>
+                        <td><input type = "date" name= "date_bought_stuff_html"/></td>
+                        <td><button class="btn btn-primary" type="submit">Ajouter</button></td>
+                    </tr>
+            </table>
+        </form>
+    </div>
+{% endblock %}

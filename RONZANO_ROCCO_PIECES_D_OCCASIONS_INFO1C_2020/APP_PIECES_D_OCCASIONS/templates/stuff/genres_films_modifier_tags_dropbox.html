@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block title %} Afficher FILMS GENRES {% endblock %}
+{% block head %}
+    <!--
+        OM 2020.05.04
+        On utilise le composant "tags-selector-tagselect" juste dans cette page,
+         il n'est pas nécessaire de la charger pour chaque page
+        c'est pourquoi il ne se trouve pas dans "base.html" mais ici
+        entre les balises JINJA "block head" "endblock"
+        -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='tags-selector-tagselect/jquery.tagselect.css') }}">
+    <script src="{{ url_for('static', filename='tags-selector-tagselect/jquery.tagselect.js') }}"></script>
+{% endblock %}
+{% block body %}
+
+
+<!--
+    OM 2020.05.04
+    Il faut éviter de placer des instructions css n'importe où et surtout en plein milieu de nulle part,
+    pour dépanner l'application ce n'est vraiment pas top...
+    Mais Flask ne reconnaît pas les instructions ci-dessous lorsqu'elles sont dans un fichier externe
+-->
+
+    <style>
+        ol, ul, li {
+            list-style: none;
+        }
+    </style>
+
+
+<div class="container">
+		<div class="col-md-12">
+			<p>
+				Tagselect, c'est une DROPBOX qui surgit quand on sélectionne l'espace "TAGS". Le composant TAGSELECT est à disposition sur ce site :
+                 <a href="https://www.jqueryscript.net/form/tags-selector-tagselect.html"
+                    target="_blank">https://www.jqueryscript.net/form/tags-selector-tagselect.html</a>
+				Films.
+			</p>
+            <table class="table table-responsive-sm">
+                {% if data_film_selected %}
+                    <thead>
+                        <tr>
+                            <th class="">
+                                id
+                            </th>
+                            <th class="">
+                                Titre
+                            </th>
+                            <th class="">
+                                Durée
+                            </th>
+                            <th class="">
+                                Date sortie
+                            </th>
+                            <th class="">
+                                Description
+                            </th>
+                            <th class="">
+                                Affiche
+                            </th>
+                        </tr>
+                    </thead>
+            {% endif %}
+
+            {% for row in data_film_selected %}
+				<tbody>
+					<tr>
+						<td class="align-middle">
+							{{ row.id_film }}
+						</td>
+						<td class="align-middle">
+							{{ row.nom_film }}
+						</td>
+						<td class="align-middle">
+							{{ row.duree_film|default("", True) }}
+						</td>
+						<td class="align-middle">
+							{{ row.date_sortie_film|default("", True) }}
+						</td>
+						<td class="align-middle">
+							{{ row.description_film|default("", True) }}
+						</td>
+						<td class="align-middle">
+<!--                            <img class="img-thumbnail" src={{ row.cover_link_film|default(None, True) }} style="border: 0;display: block;width:auto;max-height:450px;" alt = "Covid-19 grand semi-confinement mod 104">-->
+                            <img class="img-thumbnail" src={{ row.cover_link_film|default(None, True) }} style="border: 0;" alt = "Covid-19 grand semi-confinement mod 104">
+						</td>
+					</tr>
+				</tbody>
+            {% else %}
+				<tbody>
+					<tr>
+						<td>
+							Aucun film.
+						</td>
+						<td>
+							<a class="btn btn-primary" href="{{ url_for('avertissement_sympa_pour_geeks') }}" role="button">Add</a>
+						</td>
+					</tr>
+				</tbody>
+            {% endfor %}
+			</table>
+		</div>
+	</div>
+
+<div class="container">
+    <div class="row mx-md-n5">
+      <div class="col px-md-5">
+          <div class="p-3">
+            <form id="form_tags_select_confirm" action="{{ url_for('gf_update_genre_film_selected') }}" method="POST">
+                <div class="qtagselect isw360">
+                    <select id="OM_JTSD" name="name_select_tags" class="qtagselect__select" multiple>
+                        {% for row in data_genres_non_attribues %}
+                            <option value="{{ row.id_genre }}" name="name_tags_non_attribues_html" class="isblue" >{{ row.intitule_genre }}</option>
+                        {% endfor %}
+
+                        {% for row in data_genres_attribues %}
+                            <option value="{{ row.id_genre }}" name="name_tags_attribues_html" class="ispurple" selected>{{ row.intitule_genre }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+            </form>
+          </div>
+      </div>
+      <div class="col px-md-5">
+          <div class="p-3">
+            <input type="submit" form="form_tags_select_confirm" class="btn btn-warning" value="Modifier">
+          </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascript %}
+<script>
+    $('.qtagselect__select').tagselect({
+    // Paramètres du composant : https://www.jqueryscript.net/form/tags-selector-tagselect.html
+    // maximum number of tags allowed to select
+      'maxTag': 100,
+    // error message,
+      'tagMessage': '100 tags au max !'
+    });
+</script>
+{% endblock %}

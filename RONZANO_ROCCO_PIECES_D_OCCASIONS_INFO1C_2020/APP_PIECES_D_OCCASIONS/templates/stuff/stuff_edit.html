@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Editer un stuff{% endblock %}
+{% block body %}
+    <div class="home">
+        <div class="col-md-12">
+            <form method="POST" action="{{ url_for('stuff_update') }}">
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th class="align-middle">ID</th>
+                            <th class="align-middle">Nom</th>
+                            <th class="align-middle">Description</th>
+                            <th class="align-middle">Prix</th>
+                            <th class="align-middle">Type</th>
+                            <th class="align-middle">Quantité</th>
+                            <th class="align-middle">Appartenance</th>
+                            <th class="align-middle">Etat</th>
+                            <th class="align-middle">Type Payement</th>
+                            <th class="align-middle">Date d'ajout</th>
+                            <th class="align-middle">Date d'achat</th>
+                        </tr>
+                    </thead>
+                    {% for row in data %}
+                        <tr>
+                            <td><input type="hidden" name="id_stuff_edit_html" value="{{ row.id_stuff }}"></td>
+                            <td><input type = "text" name= "edit_name_stuff_html" value="{{ row.name_stuff|default("", True) }}"/></td>
+                            <td><input type = "text" name= "edit_description_stuff_html" value="{{ row.description_stuff|default("", True) }}"/></td>
+                            <td><input type = "text" name= "edit_price_stuff_html" value="{{ row.price_stuff|default("", True) }}"/></td>
+                            <td><input type = "text" name= "edit_type_stuff_html" value="{{ row.type_stuff|default("", True) }}"/></td>
+                            <td><input type = "text" name= "edit_quantity_stuff_html" value="{{ row.quantity_stuff|default("", True) }}"/></td>
+                            <td>
+                                <select name="edit_user_select">
+                                {% for row in data_user %}
+                                    <option value="{{ row.id_user }}">{{ row.firstname_user }} {{ row.lastname_user }}</option>
+                                {% endfor %}
+                                </select>
+                            </td>
+                            <td>
+                                <select name="edit_state_stuff_select">
+                                {% for row in data_state_stuff %}
+                                    <option value="{{ row.id_state_stuff }}">{{ row.state_stuff }} </option>
+                                {% endfor %}
+                                </select>
+                            </td>
+                            <td>
+                                <select name="edit_type_payment_select">
+                                {% for row in data_type_payment %}
+                                    <option value="{{ row.id_type_payment }}">{{ row.type_payment }} </option>
+                                {% endfor %}
+                                </select>
+                            </td>
+                            <td><input type = "date" name = "edit_date_add_stuff_html" value="{{ row.date_add_stuff|default("", True) }}"></td>
+                            <td><input type = "date" name = "edit_date_bought_stuff_html" value="{{ row.date_bought_stuff|default("", True) }}"></td>
+                            <td><button class="btn btn-warning" type="submit">Update</button></td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </form>
+        </div>
+    </div>
+{% endblock %}

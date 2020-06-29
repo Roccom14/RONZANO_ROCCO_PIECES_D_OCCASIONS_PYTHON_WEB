@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Editer un USER{% endblock %}
+{% block body %}
+    <div class="home">
+        <div class="col-md-12">
+            <form method="POST" action="{{ url_for('user_update') }}">
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Prénom</th>
+                            <th>Nom</th>
+                            <th>Mail</th>
+                            <th>Phone</th>
+                            <th>Adresse</th>
+                            <th>Ville</th>
+                            <th>NPA</th>
+                            <th>Genre</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    {% for row in data %}
+                        <tr>
+                            <td><input type="hidden" name="id_user_edit_html" value="{{ row.id_user }}"></td>
+                            <td><input type = "text" name = "edit_firstname_user_html" value="{{ row.firstname_user }}"></td>
+                            <td><input type = "text" name = "edit_lastname_user_html" value="{{ row.lastname_user|default("", True) }}"></td>
+                            <td><input type = "text" name = "edit_mail_html" value="{{ row.mail|default("", True) }}"></td>
+                            <td><input type = "text" name = "edit_phone_html" value="{{ row.phone|default("", True) }}"></td>
+                            <td><input type = "text" name = "edit_address_html" value="{{ row.address|default("", True) }}"></td>
+                            <td><input type = "text" name = "edit_city_html" value="{{ row.city|default("", True) }}"></td>
+                            <td><input type = "text" name = "edit_npa_html" value="{{ row.npa|default("", True) }}"></td>
+                            <td>
+                                <select name="edit_gender_select">
+                                {% for row in data_genders %}
+                                    <option value="{{ row.id_gender }}">{{ row.gender }}</option>
+                                {% endfor %}
+                                </select>
+                            </td>
+                            <td><input type = "date" name = "edit_date_user_html" value="{{ row.date_user|default("", True) }}"></td>
+                            <td><button class="btn btn-warning" type="submit">Update</button></td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </form>
+        </div>
+    </div>
+{% endblock %}

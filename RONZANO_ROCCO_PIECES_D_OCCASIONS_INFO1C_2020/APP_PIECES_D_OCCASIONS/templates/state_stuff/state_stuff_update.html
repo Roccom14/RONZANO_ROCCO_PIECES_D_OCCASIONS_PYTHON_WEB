@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}UPDATE GENRE{% endblock %}
+{% block content %}
+    <div class="home">
+        <div class="col-md-12">
+            <form method="POST" action="{{ url_for('state_stuff_update') }}">
+                <table cellpadding="5" cellspacing="5">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>State Stuff</th>
+                        </tr>
+                    </thead>
+                    {% for row in data %}
+                        <tr>
+                            <td><input type="hidden" name="idSCat" value="{{ row.id_state_stuff }}"></td>
+                            <td><input type = "text" name = "name_edit_state_stuff_html" value="{{ row.state_stuff }}"/></td>
+                            <td><button class="btn btn-warning" type="submit">Update</button></td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -84,10 +84,10 @@ INSERT INTO `t_genres` (`id_genre`, `intitule_genre`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `t_genres_films`
+-- Structure de la table `t_stuff`
 --
 
-CREATE TABLE `t_genres_films` (
+CREATE TABLE `t_stuff` (
   `id_genre_film` int(11) NOT NULL,
   `fk_genre` int(11) DEFAULT NULL,
   `fk_film` int(11) DEFAULT NULL,
@@ -95,10 +95,10 @@ CREATE TABLE `t_genres_films` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `t_genres_films`
+-- Contenu de la table `t_stuff`
 --
 
-INSERT INTO `t_genres_films` (`id_genre_film`, `fk_genre`, `fk_film`, `date_insert_genre`) VALUES
+INSERT INTO `t_stuff` (`id_genre_film`, `fk_genre`, `fk_film`, `date_insert_genre`) VALUES
 (141, 14, 3, '2020-02-12 21:30:33'),
 (142, 1, 4, '2020-02-12 21:31:31'),
 (143, 4, 4, '2020-02-12 21:31:31'),
@@ -135,9 +135,9 @@ ALTER TABLE `t_genres`
   ADD UNIQUE KEY `intitule_genre` (`intitule_genre`);
 
 --
--- Index pour la table `t_genres_films`
+-- Index pour la table `t_stuff`
 --
-ALTER TABLE `t_genres_films`
+ALTER TABLE `t_stuff`
   ADD PRIMARY KEY (`id_genre_film`),
   ADD KEY `fk_genre` (`fk_genre`),
   ADD KEY `fk_film` (`fk_film`);
@@ -157,17 +157,17 @@ ALTER TABLE `t_films`
 ALTER TABLE `t_genres`
   MODIFY `id_genre` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=159;
 --
--- AUTO_INCREMENT pour la table `t_genres_films`
+-- AUTO_INCREMENT pour la table `t_stuff`
 --
-ALTER TABLE `t_genres_films`
+ALTER TABLE `t_stuff`
   MODIFY `id_genre_film` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=158;
 --
 -- Contraintes pour les tables exportées
 --
 
 --
--- Contraintes pour la table `t_genres_films`
+-- Contraintes pour la table `t_stuff`
 --
-ALTER TABLE `t_genres_films`
-  ADD CONSTRAINT `t_genres_films_ibfk_1` FOREIGN KEY (`fk_genre`) REFERENCES `t_genres` (`id_genre`),
-  ADD CONSTRAINT `t_genres_films_ibfk_2` FOREIGN KEY (`fk_film`) REFERENCES `t_films` (`id_film`);
+ALTER TABLE `t_stuff`
+  ADD CONSTRAINT `t_stuff_ibfk_1` FOREIGN KEY (`fk_genre`) REFERENCES `t_genres` (`id_genre`),
+  ADD CONSTRAINT `t_stuff_ibfk_2` FOREIGN KEY (`fk_film`) REFERENCES `t_films` (`id_film`);

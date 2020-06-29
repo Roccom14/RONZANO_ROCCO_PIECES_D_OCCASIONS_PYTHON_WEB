@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %} Ajouter un type payment{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="col-md-12">
+            <center>
+                <form method="POST" action="">
+                    <table cellpadding="7">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Type payment</th>
+                            </tr>
+                        </thead>
+                            <tr>
+                                <td></td>
+                                <td><input type = "text" name= "type_payment_html"/></td>
+                                <td><button class="btn btn-primary" type="submit">Ajouter</button></td>
+                            </tr>
+                    </table>
+                </form>
+            </center>
+        </div>
+    </div>
+{% endblock %}
