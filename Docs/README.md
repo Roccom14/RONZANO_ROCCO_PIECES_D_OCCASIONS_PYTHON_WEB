@@ -17,35 +17,36 @@ Pour commencer il faut télécharger la dernière version de chaque logiciel:
 
 Maintenant que c'est installé il faut configurer !
 
-1. Ouvrir UwAmp ou Mamp ou Xampp et démarrer le serveur mysql si ce n'est pas déjà le cas.
-2. Dans un navigateur aller sur <http://localhost/mysql>, se log avec
+1. Ouvrir PyCharm et cliquer sur "Get from Version Control".
+2. Sur la nouvelle fenêtre qui vient de s'ouvrir, dans "URL:", coller le lien [GIT](https://github.com/Roccom14/RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB.git) et finalement choisir où installer le projet.
+3. Ouvrir le projet RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB dans PyCharm, et configurer l'interpréteur python pour que le projet puisse fonctionner.
+4. Pour configurer l'interpréteur, aller sur "*File -> Settings -> Project: RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB -> Projet Interpreter*" cliquer sur le bouton molette et choisir "Add..".
+5. Sur la nouvelle fenêtre la sélection doit être sur "New environment" et cliquer sur "OK".
+6. Si besoin, une fenêtre demandant si on veut installer les packages du projet venant de "*requirements.txt*", cliquer sur oui.
+
+Voilà PyCharm est prêt à fonctionner !
+
+7. Ouvrir UwAmp ou Mamp ou Xampp et démarrer le serveur mysql si ce n'est pas déjà le cas.
+8. Dans un navigateur aller sur <http://localhost/mysql>, se log avec
   - Username = root
   - Password = root
 
 
-3. Une fois entré dans phpMyAdmin, cliquer sur la petite maison et sous "Importer".
-4. Cliquer sur "Choisir un fichier", une nouvelle fenêtre s'ouvre, aller sur
->"*..\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020\APP_PIECES_D_OCCASIONS\DATABASE\ronzano_rocco_pieces_d_occasions_info1c_2020.sql*"
+9. Une fois entré dans phpMyAdmin, cliquer sur la petite maison et sous "Importer".
+10. Cliquer sur "Choisir un fichier", une nouvelle fenêtre s'ouvre, aller sur
+>"*..\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\APP_PIECES_D_OCCASIONS\DATABASE\ronzano_rocco_pieces_d_occasions_info1c_2020.sql*"
 
   et finalement cliquer sur "Exécuter".
 
-5. Le fichier sql à été importé.
-6. Ouvrir PyCharm et cliquer sur "Get from Version Control".
-7. Sur la nouvelle fenêtre qui vient de s'ouvrir, dans "URL:", coller le lien [GIT](https://github.com/Roccom14/RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB.git) et finalement choisir où installer le projet.
-8. Ouvrir le projet RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB dans PyCharm, et configurer l'interpréteur python pour que le projet puisse fonctionner.
-9. Pour configurer l'interpréteur, aller sur "*File -> Settings -> Project: RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB -> Projet Interpreter*" cliquer sur le bouton molette et choisir "Add..".
-10. Sur la nouvelle fenêtre la sélection doit être sur "New environment" et cliquer sur "OK".
-11. Si besoin, une fenêtre demandant si on veux installer les packages du document "*requirements.txt*", cliquer sur oui.
-
-Voilà PyCharm est prêt à fonctionner !
+Trop bien, le fichier sql à été importé !
 
 ##### --AFFICHAGE DU PROJET--
 
 1. Dans PyCharm, sous
->"*RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020\run_mon_app.py*"
+>"*RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\run_mon_app.py*"
 
-  Clique-droit sur "run_mon_app.py", dans le menu déroulant, sélectionner "Run 'run_mon_app'".
-2. Dans le terminal de PyCharm, des ligne de codes défilent, et à la fin une comportant <https://127.0.0.1:1148/> cliquer sur celle-ci.
+  Clique-droit sur "run_mon_app.py", dans le menu déroulant, Exécuter "Run 'run_mon_app'".
+2. Dans le run de PyCharm, des ligne de codes défilent, et à la fin une ligne comportant <http://127.0.0.1:1148/>, cliquer sur celle-ci.
 3. Un nouvel onglet dans votre navigateur vient de s'ouvrir, c'est le projet !
 
 

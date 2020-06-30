@@ -1,7 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="29aab891-1e1c-42ef-810b-98812ec283e7" name="Default Changelist" comment="" />
+    <list default="true" id="e16bab88-ce0c-46b7-9906-d20b2bef46dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATABASE/DELETE/delete_one_record_one_table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATABASE/INSERT/insert_one_table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATABASE/NOM_PRENOM_SUJET_BD_104_2020.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATABASE/REQUETES_NOM_PRENOM_SUJET_BD_104.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATABASE/SELECT/select_table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATABASE/UPDATE/update_one_record_one_table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATABASE/connect_db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILMS/insert_films_multi_values.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILMS_GENRES/insert_one_row_films_genres.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILMS_GENRES/select_all_films_genres.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GENRES/delete_fixe_genres.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GENRES/insert_genres_one_value.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GENRES/select_all_genres.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GENRES/update_fixe_genre.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/.idea/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/DATABASE/NOM_PRENOM_SUJET_BD_104_2020.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/DATABASE/REQUETES_NOM_PRENOM_SUJET_BD_104.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/DATABASE/connect_db_context_manager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/DATABASE/erreurs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/DATABASE/ronzano_rocco_pieces_d_occasions_info1c_2020.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/GENDERS/data_gestion_genders.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/GENDERS/routes_gestion_genders.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/STATE_STUFF/data_gestion_state_stuff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/STATE_STUFF/routes_gestion_state_stuff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/STUFF/data_gestion_stuff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/STUFF/routes_gestion_stuff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/TYPE_PAYMENT/data_gestion_type_payment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/TYPE_PAYMENT/routes_gestion_type_payment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/USER/data_gestion_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/USER/routes_gestion_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootstrap-4.4.1-dist/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootswatch-4.4.1/cyborg/_bootswatch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootswatch-4.4.1/cyborg/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootswatch-4.4.1/cyborg/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootswatch-4.4.1/cyborg/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootswatch-4.4.1/spacelab/_bootswatch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootswatch-4.4.1/spacelab/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootswatch-4.4.1/spacelab/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/bootswatch-4.4.1/spacelab/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/droid-serif/Apache License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/droid-serif/DroidSerif-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/droid-serif/DroidSerif-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/droid-serif/DroidSerif-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/droid-serif/DroidSerif-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/fonts/ufonts.com_copperplate-gothic-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/js/jquery-3.4.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/kaguya-ara-ara.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/occasion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/tags-selector-tagselect/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/tags-selector-tagselect/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/tags-selector-tagselect/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/tags-selector-tagselect/jquery.tagselect.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/tags-selector-tagselect/jquery.tagselect.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/tags-selector-tagselect/jquery.tagselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/tags-selector-tagselect/jquery.tagselect.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/tags-selector-tagselect/qtagicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/tags-selector-tagselect/tagselect-perso_sos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/static/tags-selector-tagselect/tagselect.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/flash_messages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/genders/genders_add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/genders/genders_afficher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/genders/genders_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/genders/genders_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/genders/genders_update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/keyerror.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/state_stuff/state_stuff_add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/state_stuff/state_stuff_afficher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/state_stuff/state_stuff_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/state_stuff/state_stuff_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/state_stuff/state_stuff_update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/stuff/genres_films_modifier_tags_dropbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/stuff/stuff_add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/stuff/stuff_afficher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/stuff/stuff_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/stuff/stuff_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/stuff/stuff_update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/type_payment/type_payment_add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/type_payment/type_payment_afficher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/type_payment/type_payment_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/type_payment/type_payment_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/type_payment/type_payment_update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/user/AVERTISSEMENT_SYMPA_POUR_LES_GEEKS_films.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/user/user_add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/user/user_afficher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/user/user_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/user/user_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/user/user_update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/APP_PIECES_D_OCCASIONS/templates/zzz_essais_om_104/exception_raise_custom_om_104.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020/run_mon_app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ZZZ_DEMOS_PYTHON/mon_premier_essai.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,31 +167,128 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1e0UilraLjjDTa1oenc7f8M81Ia" />
+  <component name="ProjectId" id="1e0UmAYkuYpHvcATjg1HUG5bSxM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="run_mon_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_mon_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run_mon_app" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="29aab891-1e1c-42ef-810b-98812ec283e7" name="Default Changelist" comment="" />
-      <created>1593458132276</created>
+      <changelist id="e16bab88-ce0c-46b7-9906-d20b2bef46dc" name="Default Changelist" comment="" />
+      <created>1593458160058</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1593458132276</updated>
-      <workItem from="1593458134972" duration="13000" />
+      <updated>1593458160058</updated>
+      <workItem from="1593458161402" duration="16678000" />
+      <workItem from="1593527785298" duration="239000" />
+      <workItem from="1593528117067" duration="736000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2517" height="282" key="GridCell.Tab.0.bottom" timestamp="1593528858517">
+      <screen x="1920" y="-358" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-358.2560.1400@1920.-358.2560.1400" timestamp="1593528858517" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593470530064" />
+    <state width="2517" height="282" key="GridCell.Tab.0.center" timestamp="1593528858517">
+      <screen x="1920" y="-358" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-358.2560.1400@1920.-358.2560.1400" timestamp="1593528858517" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593470530064" />
+    <state width="2517" height="282" key="GridCell.Tab.0.left" timestamp="1593528858517">
+      <screen x="1920" y="-358" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-358.2560.1400@1920.-358.2560.1400" timestamp="1593528858517" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593470530064" />
+    <state width="2517" height="282" key="GridCell.Tab.0.right" timestamp="1593528858517">
+      <screen x="1920" y="-358" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-358.2560.1400@1920.-358.2560.1400" timestamp="1593528858517" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593470530064" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1593458234811">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593458234811" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1593470590884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593470590884" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/GENDERS/data_gestion_genders.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB$run_mon_app.coverage" NAME="run_mon_app Coverage Results" MODIFIED="1593528716070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020$run_mon_app.coverage" NAME="run_mon_app Coverage Results" MODIFIED="1593527879672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
