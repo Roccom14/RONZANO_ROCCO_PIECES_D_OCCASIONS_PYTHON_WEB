@@ -12,17 +12,16 @@ def index():
 
 
 @obj_mon_application.route('/')
-@obj_mon_application.route('/essai')
-def home_dans_routes_pour_exemple_hommage_m_el_vyn_mal_herbe():
+def home():
     return render_template("home.html")
 
 # OM 2020.04.09 Pour une démonstration du traitement d'erreurs avec "raise"
-# Pour tester cette fonction: http://127.0.0.1:5005/taillepersonne
+# Pour tester cette fonction: http://127.0.0.1:1148/taillepersonne
 @obj_mon_application.route('/taillepersonne')
 def personnes_taille_dict():
     # DEBUG bon marché : Pour afficher dans la console les valeurs des erreurs "customisées"
     # dans le fichier "DATABASE/erreurs.py" et le type de ces valeurs.
-    print("msg_erreurs ", msg_erreurs, "type msg_erreurs ",type(msg_erreurs))
+    print("msg_erreurs ", msg_erreurs, "type msg_erreurs ", type(msg_erreurs))
 
     # Affiche les valeurs et les clés
     print(msg_erreurs.items())
@@ -35,7 +34,7 @@ def personnes_taille_dict():
     print("val dans le dict ", msg_erreurs['ErreurDictionnaire'])
 
     # Défini un petit dictionnaire
-    taille_personnes_dict = {"OM" : 194, "Gégé" : 175, "Hugo" : 163}
+    taille_personnes_dict = {"OM": 194, "Gégé": 175, "Hugo": 163}
     #
     # OM 2020.04.09 Pour vos essais, il suffit d'enlever le # pour voir comment fonctionne pratiquement
     # le traitement de l'erreur.
@@ -45,7 +44,7 @@ def personnes_taille_dict():
     # nom_personne = "Gégé"
     # nom_personne = "Hugo"
 
-    nom_personne = "Pignon"
+    nom_personne = "OM"
 
     try:
         # Tout se passe normalement

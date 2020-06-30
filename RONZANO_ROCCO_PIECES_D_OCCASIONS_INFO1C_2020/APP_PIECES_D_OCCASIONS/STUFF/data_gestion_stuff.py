@@ -36,7 +36,7 @@ class GestionStuff:
                 # Récupère les données de la requête.
                 data_stuff = mc_afficher.fetchall()
                 # Affichage dans la console
-                print("data_user ", data_stuff, " Type : ", type(data_stuff))
+                print("data_stuff ", data_stuff, " Type : ", type(data_stuff))
                 # Retourne les données du "SELECT"
                 return data_stuff
         except pymysql.Error as erreur:
@@ -55,8 +55,13 @@ class GestionStuff:
             print(valeurs_insertion_dictionnaire)
             # OM 2020.04.07 C'EST LA QUE VOUS ALLEZ DEVOIR PLACER VOTRE PROPRE LOGIQUE MySql
 
-            strsql_insert_stuff = """INSERT INTO t_stuff (id_stuff, name_stuff, description_stuff, price_stuff, type_stuff, quantity_stuff, firstname_user, lastname_user, state_stuff, type_payment, date_add_stuff, date_bought_stuff) 
-                                    VALUES (NULL, %(value_name_stuff)s, %(value_description_stuff)s, %(value_price_stuff)s, %(value_type_stuff)s, %(value_quantity_stuff)s, %(value_firstname_user)s, %(value_state_stuff)s, %(value_type_payment)s, %(value_date_add_stuff)s, %(value_date_bought_stuff)s);"""
+            strsql_insert_stuff = """INSERT INTO t_stuff (id_stuff, name_stuff, description_stuff, price_stuff, 
+                                        type_stuff, quantity_stuff, fk_user, fk_state_stuff, 
+                                        fk_type_payment, date_add_stuff, date_bought_stuff) 
+                                    VALUES (NULL, %(value_name_stuff)s, %(value_description_stuff)s, 
+                                    %(value_price_stuff)s, %(value_type_stuff)s, %(value_quantity_stuff)s, 
+                                    %(value_firstname_user)s, %(value_state_stuff)s, %(value_type_payment)s, 
+                                    %(value_date_add_stuff)s, %(value_date_bought_stuff)s);"""
             # Du fait de l'utilisation des "context managers" on accède au curseur grâce au "with".
             # la subtilité consiste à avoir une méthode "mabd_execute" dans la classe "MaBaseDeDonnee"
             # ainsi quand elle aura terminé l'insertion des données le destructeur de la classe "MaBaseDeDonnee"
@@ -76,8 +81,10 @@ class GestionStuff:
                 print(valeur_id_dictionnaire)
                 # OM 2020.04.07 C'EST LA QUE VOUS ALLEZ DEVOIR PLACER VOTRE PROPRE LOGIQUE MySql
                 # Commande MySql pour afficher le user sélectionné dans le tableau dans le formulaire HTML
-                str_sql_id_stuff = """SELECT id_stuff, name_stuff, description_stuff, price_stuff, type_stuff, quantity_stuff, firstname_user, lastname_user, state_stuff, type_payment, date_add_stuff, date_bought_stuff FROM t_stuff 
-                                        INNER JOIN t_user ON t_stuff.fk_user = t_user.id_user 
+                str_sql_id_stuff = """SELECT id_stuff, name_stuff, description_stuff, price_stuff, type_stuff, 
+                                        quantity_stuff, firstname_user, lastname_user, state_stuff, type_payment, 
+                                        date_add_stuff, date_bought_stuff FROM t_stuff 
+                                        INNER JOIN t_user ON t_stuff.fk_firstname_user, fk_lastname_user = t_user.id_user 
                                         INNER JOIN t_state_stuff ON t_stuff.fk_state_stuff = t_state_stuff.id_state_stuff 
                                         INNER JOIN t_type_payment ON t_stuff.fk_type_payment = t_type_payment.id_type_payment WHERE id_stuff = %(value_id_stuff)s"""
 
@@ -146,7 +153,7 @@ class GestionStuff:
             # OM 2020.04.07 C'EST LA QUE VOUS ALLEZ DEVOIR PLACER VOTRE PROPRE LOGIQUE MySql
             # Commande MySql pour afficher le user sélectionné dans le tableau dans le formulaire HTML
             str_sql_select_id_stuff = """SELECT id_stuff, name_stuff, description_stuff, price_stuff, type_stuff, quantity_stuff, firstname_user, lastname_user, state_stuff, type_payment, date_add_stuff, date_bought_stuff FROM t_stuff 
-                                        INNER JOIN t_user ON t_stuff.fk_user = t_user.id_user 
+                                        INNER JOIN t_user ON t_stuff.fk_firstname_user, fk_lastname_user = t_user.id_user 
                                         INNER JOIN t_state_stuff ON t_stuff.fk_state_stuff = t_state_stuff.id_state_stuff 
                                         INNER JOIN t_type_payment ON t_stuff.fk_type_payment = t_type_payment.id_type_payment WHERE id_stuff = %(value_id_stuff)s"""
 

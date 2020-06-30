@@ -70,7 +70,7 @@ def stuff_add():
     if request.method == "POST":
         try:
             # OM 2020.04.09 Objet contenant toutes les méthodes pour gérer (CRUD) les données.
-            obj_actions_user = GestionStuff()
+            obj_actions_stuff = GestionStuff()
             # OM 2020.04.09 Récupère le contenu du champ dans le formulaire HTML "user_add.html"
             name_stuff = request.form['name_stuff_html']
             description_stuff = request.form['description_stuff_html']
@@ -107,7 +107,7 @@ def stuff_add():
                                                   "value_date_add_stuff": date_add_stuff,
                                                   "value_date_bought_stuff": date_bought_stuff}
 
-                obj_actions_user.add_stuff_data(valeurs_insertion_dictionnaire)
+                obj_actions_stuff.add_stuff_data(valeurs_insertion_dictionnaire)
 
                 # OM 2019.03.25 Les 2 lignes ci-après permettent de donner un sentiment rassurant aux utilisateurs.
                 flash(f"Données insérées !!", "Sucess")

@@ -26,7 +26,7 @@
                     <tbody>
                         <tr>
                             <td class="align-middle">{{ row.id_stuff }}</td>
-                            <td class="align-middle">{{ row.name_stuff }}</td>
+                            <td class="align-middle">{{ row.name_stuff|default("", True) }}</td>
                             <td class="align-middle">{{ row.description_stuff|default("", True) }}</td>
                             <td class="align-middle">{{ row.price_stuff|default("", True) }} Frs.</td>
                             <td class="align-middle">{{ row.type_stuff|default("", True) }}</td>
