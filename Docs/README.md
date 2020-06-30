@@ -27,7 +27,7 @@ Maintenant que c'est installé il faut configurer !
 4. Cliquer sur "Choisir un fichier", une nouvelle fenêtre s'ouvre, aller sur
 >"*..\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020\APP_PIECES_D_OCCASIONS\DATABASE\ronzano_rocco_pieces_d_occasions_info1c_2020.sql*"
 
-      et finalement cliquer sur "Exécuter".
+  et finalement cliquer sur "Exécuter".
 
 5. Le fichier sql à été importé.
 6. Ouvrir PyCharm et cliquer sur "Get from Version Control".
