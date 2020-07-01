@@ -67,13 +67,13 @@ def user_add():
             # OM 2020.04.09 Récupère le contenu du champ dans le formulaire HTML "user_add.html"
             firstname_user = request.form['firstname_user_html']
             lastname_user = request.form['lastname_user_html']
-            mail = request.form['mail_html']
-            phone = request.form['phone_html']
-            address = request.form['address_html']
-            city = request.form['city_html']
-            npa = request.form['npa_html']
+            mail_user = request.form['mail_user_html']
+            phone_user = request.form['phone_user_html']
+            address_user = request.form['address_user_html']
+            city_user = request.form['city_user_html']
+            npa_user = request.form['npa_user_html']
             gender = request.form['gender_select']
-            date_user = request.form['date_user_html']
+            date_add_user = request.form['date_add_user_html']
 
             # OM 2019.04.04 On ne doit pas accepter des valeurs vides, des valeurs avec des chiffres,
             # des valeurs avec des caractères qui ne sont pas des lettres.
@@ -90,13 +90,13 @@ def user_add():
                 # Constitution d'un dictionnaire et insertion dans la BD
                 valeurs_insertion_dictionnaire = {"value_firstname_user": firstname_user,
                                                   "value_lastname_user": lastname_user,
-                                                  "value_mail": mail,
-                                                  "value_phone": phone,
-                                                  "value_address": address,
-                                                  "value_city": city,
-                                                  "value_npa": npa,
+                                                  "value_mail_user": mail_user,
+                                                  "value_phone_user": phone_user,
+                                                  "value_address_user": address_user,
+                                                  "value_city_user": city_user,
+                                                  "value_npa_user": npa_user,
                                                   "value_gender": gender,
-                                                  "value_date_user": date_user}
+                                                  "value_date_add_user": date_add_user}
 
                 obj_actions_user.add_user_data(valeurs_insertion_dictionnaire)
 
@@ -216,17 +216,17 @@ def user_update():
             # Récupère le contenu du champ "firstname_user" dans le formulaire HTML "UserEdit.html"
             firstname_user = request.values['edit_firstname_user_html']
             lastname_user = request.form['edit_lastname_user_html']
-            mail = request.form['edit_mail_html']
-            phone = request.form['edit_phone_html']
-            address = request.form['edit_address_html']
-            city = request.form['edit_city_html']
-            npa = request.form['edit_npa_html']
+            mail_user = request.form['edit_mail_user_html']
+            phone_user = request.form['edit_phone_user_html']
+            address_user = request.form['edit_address_user_html']
+            city_user = request.form['edit_city_user_html']
+            npa_user = request.form['edit_npa_user_html']
             gender = request.form['edit_gender_select']
-            date_user = request.form['edit_date_user_html']
+            date_add_user = request.form['edit_date_add_user_html']
             valeur_edit_list = [{'id_user': id_user_edit, 'firstname_user': firstname_user,
-                                 'lastname_user': lastname_user, 'mail': mail, 'phone': phone,
-                                 'address': address, 'city': city, 'npa': npa, 'fk_gender': gender,
-                                 'date_user': date_user}]
+                                 'lastname_user': lastname_user, 'mail_user': mail_user, 'phone_user': phone_user,
+                                 'address_user': address_user, 'city_user': city_user, 'npa_user': npa_user, 'fk_gender': gender,
+                                 'date_user': date_add_user}]
             # On ne doit pas accepter des valeurs vides, des valeurs avec des chiffres,
             # des valeurs avec des caractères qui ne sont pas des lettres.
             # Accepte le trait d'union ou l'apostrophe, et l'espace entre deux mots, mais pas plus d'une occurence.
@@ -244,9 +244,9 @@ def user_update():
                 # la possibilité de modifier l'entrée
                 # Exemple d'une liste : [{'id_user': 13, 'firstname_user': 'philosophique'}]
                 valeur_edit_list = [{'id_user': id_user_edit, 'firstname_user': firstname_user,
-                                     'lastname_user': lastname_user, 'mail': mail, 'phone': phone,
-                                     'address': address, 'city': city, 'npa': npa, 'fk_gender': gender,
-                                     'date_user': date_user}]
+                                     'lastname_user': lastname_user, 'mail_user': mail_user, 'phone_user': phone_user,
+                                     'address_user': address_user, 'city_user': city_user, 'npa_user': npa_user, 'fk_gender': gender,
+                                     'date_user': date_add_user}]
                 # DEBUG bon marché :
                 # Pour afficher le contenu et le type de valeurs passées au formulaire "user_edit.html"
                 print(valeur_edit_list, "type ..", type(valeur_edit_list))
@@ -256,13 +256,13 @@ def user_update():
                 valeur_update_dictionnaire = {"value_id_user": id_user_edit,
                                               "value_firstname_user": firstname_user,
                                               "value_lastname_user": lastname_user,
-                                              "value_mail": mail,
-                                              "value_phone": phone,
-                                              "value_address": address,
-                                              "value_city": city,
-                                              "value_npa": npa,
+                                              "value_mail_user": mail_user,
+                                              "value_phone_user": phone_user,
+                                              "value_address_user": address_user,
+                                              "value_city_user": city_user,
+                                              "value_npa_user": npa_user,
                                               "value_gender": gender,
-                                              "value_date_user": date_user}
+                                              "value_date_add_user": date_add_user}
 
                 # OM 2020.04.09 Objet contenant toutes les méthodes pour gérer (CRUD) les données.
                 obj_actions_user = GestionUser()

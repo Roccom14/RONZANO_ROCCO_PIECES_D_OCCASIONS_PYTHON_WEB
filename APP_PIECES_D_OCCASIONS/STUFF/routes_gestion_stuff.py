@@ -155,10 +155,10 @@ def stuff_edit():
     # d'une seule ligne choisie par le bouton "edit" dans le formulaire "user_afficher.html"
 
     obj_actions_user = GestionUser()
-    obj_actions_state_stuff = GestionStateStuff()
-    obj_actions_type_payment = GestionTypePayment()
     data_user = obj_actions_user.user_afficher_data()
+    obj_actions_state_stuff = GestionStateStuff()
     data_state_stuff = obj_actions_state_stuff.state_stuff_afficher_data(valeur_order_by='ASC', id_state_stuff_sel=0)
+    obj_actions_type_payment = GestionTypePayment()
     data_type_payment = obj_actions_type_payment.type_payment_afficher_data(valeur_order_by='ASC', id_type_payment_sel=0)
 
     if request.method == 'GET':
@@ -220,10 +220,10 @@ def stuff_update():
     # Une fois que l'utilisateur à modifié la valeur du firstname_user alors il va appuyer sur le bouton "UPDATE"
     # donc en "POST"
     obj_actions_user = GestionUser()
-    obj_actions_state_stuff = GestionStateStuff()
-    obj_actions_type_payment = GestionTypePayment()
     data_user = obj_actions_user.user_afficher_data()
+    obj_actions_state_stuff = GestionStateStuff()
     data_state_stuff = obj_actions_state_stuff.state_stuff_afficher_data(valeur_order_by='ASC', id_state_stuff_sel=0)
+    obj_actions_type_payment = GestionTypePayment()
     data_type_payment = obj_actions_type_payment.type_payment_afficher_data(valeur_order_by='ASC', id_type_payment_sel=0)
 
     if request.method == 'POST':
@@ -336,6 +336,14 @@ def stuff_select_delete():
 
             # OM 2020.04.09 Objet contenant toutes les méthodes pour gérer (CRUD) les données.
             obj_actions_stuff = GestionStuff()
+            obj_actions_user = GestionUser()
+            data_user = obj_actions_user.user_afficher_data()
+            obj_actions_state_stuff = GestionStateStuff()
+            data_state_stuff = obj_actions_state_stuff.state_stuff_afficher_data(valeur_order_by='ASC',
+                                                                                 id_state_stuff_sel=0)
+            obj_actions_type_payment = GestionTypePayment()
+            data_type_payment = obj_actions_type_payment.type_payment_afficher_data(valeur_order_by='ASC',
+                                                                                    id_type_payment_sel=0)
             # OM 2019.04.04 Récupérer la valeur de "idUserDeleteHTML" du formulaire html "UserDelete.html"
             id_stuff_delete = request.args.get('id_stuff_delete_html')
 
@@ -374,6 +382,14 @@ def stuff_delete():
         try:
             # OM 2020.04.09 Objet contenant toutes les méthodes pour gérer (CRUD) les données.
             obj_actions_stuff = GestionStuff()
+            obj_actions_user = GestionUser()
+            data_user = obj_actions_user.user_afficher_data()
+            obj_actions_state_stuff = GestionStateStuff()
+            data_state_stuff = obj_actions_state_stuff.state_stuff_afficher_data(valeur_order_by='ASC',
+                                                                                 id_state_stuff_sel=0)
+            obj_actions_type_payment = GestionTypePayment()
+            data_type_payment = obj_actions_type_payment.type_payment_afficher_data(valeur_order_by='ASC',
+                                                                                    id_type_payment_sel=0)
             # OM 2019.04.02 Récupérer la valeur de "id_user" du formulaire html "UserAfficher.html"
             id_stuff_delete = request.form['id_stuff_delete_html']
             # Constitution d'un dictionnaire et insertion dans la BD

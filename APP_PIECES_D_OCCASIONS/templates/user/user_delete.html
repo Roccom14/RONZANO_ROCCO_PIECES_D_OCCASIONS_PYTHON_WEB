@@ -24,13 +24,13 @@
                             <td><input type="hidden" name="id_user_delete_html" value="{{ row.id_user }}"></td>
                             <td>{{ row.firstname_user|default("", True) }}</td>
                             <td>{{ row.lastname_user|default("", True) }}</td>
-                            <td>{{ row.mail|default("", True) }}</td>
-                            <td>{{ row.phone|default("", True) }}</td>
-                            <td>{{ row.address|default("", True) }}</td>
-                            <td>{{ row.city|default("", True) }}</td>
-                            <td>{{ row.npa|default("", True) }}</td>
+                            <td>{{ row.mail_user|default("", True) }}</td>
+                            <td>{{ row.phone_user|default("", True) }}</td>
+                            <td>{{ row.address_user|default("", True) }}</td>
+                            <td>{{ row.city_user|default("", True) }}</td>
+                            <td>{{ row.npa_user|default("", True) }}</td>
                             <td>{{ row.gender|default("", True) }}</td>
-                            <td>{{ row.date_user|default("", True) }}</td>
+                            <td>{{ row.date_add_user|default("", True) }}</td>
                             <td><button class="btn btn-danger" type="submit">EFFACER</button></td>
                         </tr>
                     {% endfor %}

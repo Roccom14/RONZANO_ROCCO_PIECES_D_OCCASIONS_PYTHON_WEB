@@ -31,7 +31,7 @@
                             <td class="align-middle">{{ row.price_stuff|default("", True) }} Frs.</td>
                             <td class="align-middle">{{ row.type_stuff|default("", True) }}</td>
                             <td class="align-middle">{{ row.quantity_stuff|default("", True) }}</td>
-                            <td class="align-middle">{{ row.user|default("", True) }}</td>
+                            <td class="align-middle">{{ row.firstname_user|default("", True) }} {{ row.lastname_user|default("", True) }}</td>
                             <td class="align-middle">{{ row.state_stuff|default("", True) }}</td>
                             <td class="align-middle">{{ row.type_payment|default("", True) }}</td>
                             <td class="align-middle">{{ row.date_add_stuff|default("", True) }}</td>

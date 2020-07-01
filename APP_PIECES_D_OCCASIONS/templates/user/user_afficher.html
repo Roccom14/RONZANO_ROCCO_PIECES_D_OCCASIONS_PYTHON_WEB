@@ -27,13 +27,13 @@
                             <td class="align-middle">{{ row.id_user }}</td>
                             <td class="align-middle">{{ row.firstname_user|default("", True) }}</td>
                             <td class="align-middle">{{ row.lastname_user|default("", True) }}</td>
-                            <td class="align-middle">{{ row.mail|default("", True) }}</td>
-                            <td class="align-middle">{{ row.phone|default("", True) }}</td>
-                            <td class="align-middle">{{ row.address|default("", True) }}</td>
-                            <td class="align-middle">{{ row.city|default("", True) }}</td>
-                            <td class="align-middle">{{ row.npa|default("", True) }}</td>
+                            <td class="align-middle">{{ row.mail_user|default("", True) }}</td>
+                            <td class="align-middle">{{ row.phone_user|default("", True) }}</td>
+                            <td class="align-middle">{{ row.address_user|default("", True) }}</td>
+                            <td class="align-middle">{{ row.city_user|default("", True) }}</td>
+                            <td class="align-middle">{{ row.npa_user|default("", True) }}</td>
                             <td class="align-middle">{{ row.gender|default("", True) }}</td>
-                            <td class="align-middle">{{ row.date_user|default("", True) }}</td>
+                            <td class="align-middle">{{ row.date_add_user|default("", True) }}</td>
                             <td class="align-middle"><a class="btn btn-primary" href="{{ url_for('user_add') }}">Ajouter</a> </td>
                             <td class="align-middle"><a class="btn btn-warning" href="{{ url_for('user_edit', id_user_edit_html=row.id_user) }}">Editer</a> </td>
                             <td class="align-middle"><a class="btn btn-danger" href="{{ url_for('user_select_delete', id_user_delete_html=row.id_user) }}">Supprimer</a> </td>

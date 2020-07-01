@@ -25,7 +25,7 @@ class GestionUser:
             # la commande MySql classique est "SELECT * FROM t_user"
             # Pour "lever"(raise) une erreur s'il y a des erreurs sur les noms d'attributs dans la table
             # donc, je précise les champs à afficher
-            strsql_user_afficher = """SELECT id_user, firstname_user, lastname_user, mail, phone, address, city, npa, gender, date_user FROM t_user INNER JOIN t_gender ON t_user.fk_gender = t_gender.id_gender ORDER BY id_user ASC"""
+            strsql_user_afficher = """SELECT id_user, firstname_user, lastname_user, mail_user, phone_user, address_user, city_user, npa_user, gender, date_add_user FROM t_user INNER JOIN t_gender ON t_user.fk_gender = t_gender.id_gender ORDER BY id_user ASC"""
             # Du fait de l'utilisation des "context managers" on accède au curseur grâce au "with".
             with MaBaseDeDonnee().connexion_bd.cursor() as mc_afficher:
                 # Envoi de la commande MySql
@@ -52,8 +52,8 @@ class GestionUser:
             print(valeurs_insertion_dictionnaire)
             # OM 2020.04.07 C'EST LA QUE VOUS ALLEZ DEVOIR PLACER VOTRE PROPRE LOGIQUE MySql
 
-            strsql_insert_user = """INSERT INTO t_user (id_user, firstname_user, lastname_user, mail, phone, address, city, npa, fk_gender, date_user) 
-                                    VALUES (NULL, %(value_firstname_user)s, %(value_lastname_user)s, %(value_mail)s, %(value_phone)s, %(value_address)s, %(value_city)s, %(value_npa)s, %(value_gender)s, %(value_date_user)s);"""
+            strsql_insert_user = """INSERT INTO t_user (id_user, firstname_user, lastname_user, mail_user, phone_user, address_user, city_user, npa_user, fk_gender, date_add_user) 
+                                    VALUES (NULL, %(value_firstname_user)s, %(value_lastname_user)s, %(value_mail_user)s, %(value_phone_user)s, %(value_address_user)s, %(value_city_user)s, %(value_npa_user)s, %(value_gender)s, %(value_date_add_user)s);"""
             # Du fait de l'utilisation des "context managers" on accède au curseur grâce au "with".
             # la subtilité consiste à avoir une méthode "mabd_execute" dans la classe "MaBaseDeDonnee"
             # ainsi quand elle aura terminé l'insertion des données le destructeur de la classe "MaBaseDeDonnee"
@@ -73,7 +73,7 @@ class GestionUser:
                 print(valeur_id_dictionnaire)
                 # OM 2020.04.07 C'EST LA QUE VOUS ALLEZ DEVOIR PLACER VOTRE PROPRE LOGIQUE MySql
                 # Commande MySql pour afficher le user sélectionné dans le tableau dans le formulaire HTML
-                str_sql_id_user = "SELECT id_user, firstname_user, lastname_user, mail, phone, address, city, npa, gender, date_user FROM t_user INNER JOIN t_gender ON t_user.fk_gender = t_gender.id_gender WHERE id_user = %(value_id_user)s"
+                str_sql_id_user = "SELECT id_user, firstname_user, lastname_user, mail_user, phone_user, address_user, city_user, npa_user, gender, date_add_user FROM t_user INNER JOIN t_gender ON t_user.fk_gender = t_gender.id_gender WHERE id_user = %(value_id_user)s"
 
                 # Du fait de l'utilisation des "context managers" on accède au curseur grâce au "with".
                 # la subtilité consiste à avoir une méthode "mabd_execute" dans la classe "MaBaseDeDonnee"
@@ -101,7 +101,7 @@ class GestionUser:
             # OM 2019.04.02 Commande MySql pour la MODIFICATION de la valeur "CLAVIOTTEE" dans le champ "nameEditIntituleUserHTML" du form HTML "UserEdit.html"
             # le "%s" permet d'éviter des injections SQL "simples"
             # <td><input type = "text" name = "nameEditIntituleUserHTML" value="{{ row.intitule_user }}"/></td>
-            str_sql_update_user = "UPDATE t_user SET firstname_user = %(value_firstname_user)s, lastname_user = %(value_lastname_user)s , mail = %(value_mail)s, phone = %(value_phone)s, address = %(value_address)s, city = %(value_city)s, npa = %(value_npa)s, fk_gender = %(value_gender)s, date_user = %(value_date_user)s WHERE id_user = %(value_id_user)s"
+            str_sql_update_user = "UPDATE t_user SET firstname_user = %(value_firstname_user)s, lastname_user = %(value_lastname_user)s , mail_user = %(value_mail_user)s, phone_user = %(value_phone_user)s, address_user = %(value_address_user)s, city_user = %(value_city_user)s, npa_user = %(value_npa_user)s, fk_gender = %(value_gender)s, date_add_user = %(value_date_add_user)s WHERE id_user = %(value_id_user)s"
 
             # Du fait de l'utilisation des "context managers" on accède au curseur grâce au "with".
             # la subtilité consiste à avoir une méthode "mabd_execute" dans la classe "MaBaseDeDonnee"
@@ -139,7 +139,7 @@ class GestionUser:
 
             # OM 2020.04.07 C'EST LA QUE VOUS ALLEZ DEVOIR PLACER VOTRE PROPRE LOGIQUE MySql
             # Commande MySql pour afficher le user sélectionné dans le tableau dans le formulaire HTML
-            str_sql_select_id_user = "SELECT id_user, firstname_user, lastname_user, mail, phone, address, city, npa, gender, date_user FROM t_user INNER JOIN t_gender ON t_user.fk_gender = t_gender.id_gender WHERE id_user = %(value_id_user)s"
+            str_sql_select_id_user = "SELECT id_user, firstname_user, lastname_user, mail_user, phone_user, address_user, city_user, npa_user, gender, date_add_user FROM t_user INNER JOIN t_gender ON t_user.fk_gender = t_gender.id_gender WHERE id_user = %(value_id_user)s"
 
             # Du fait de l'utilisation des "context managers" on accède au curseur grâce au "with".
             # la subtilité consiste à avoir une gméthode "mabd_execute" dans la classe "MaBaseDeDonnee"
