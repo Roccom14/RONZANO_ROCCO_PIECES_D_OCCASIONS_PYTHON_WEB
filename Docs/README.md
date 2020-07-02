@@ -19,41 +19,45 @@ Maintenant que c'est installé il faut configurer !
 
 1. Ouvrir PyCharm et cliquer sur "Get from Version Control".
 2. Sur la nouvelle fenêtre qui vient de s'ouvrir, dans "URL:", coller le lien [GIT](https://github.com/Roccom14/RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB.git) et finalement choisir où installer le projet.
-3. Ouvrir le projet RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB dans PyCharm, et configurer l'interpréteur python pour que le projet puisse fonctionner.
-4. Pour configurer l'interpréteur, aller sur "*File -> Settings -> Project: RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB -> Projet Interpreter*" cliquer sur le bouton molette et choisir "Add..".
-5. Sur la nouvelle fenêtre la sélection doit être sur "New environment" et cliquer sur "OK".
-6. Si une fenêtre demande si on veut installer les packages du projet venant de "*requirements.txt*", cliquer sur oui.
-7. Sinon, aller dans à "*RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\requirements.txt*" et insatller les packages manquants au bon fonctionnement en passant la souris dessus et une petite ampoule apparaît, selectionner "install package [name_package]"
+3. Ouvrir le projet ```RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB``` dans PyCharm, et configurer l'interpréteur python pour que le projet puisse fonctionner.
+4. Pour configurer l'interpréteur, aller sur ```File -> Settings -> Project: RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB -> Projet Interpreter``` cliquer sur le bouton molette et choisir ```Add...```.
+5. Sur la nouvelle fenêtre la sélection doit être sur ```New environment``` et cliquer sur ```OK```.
+6. Si une fenêtre demande si on veut installer les packages du projet venant de ```requirements.txt```, cliquer sur oui.
+7. Sinon, aller dans à ```RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\requirements.txt``` et installer les packages manquants au bon fonctionnement en passant la souris dessus et une petite ampoule apparaît, selectionner "install package [name_package]"
 
-  *  Si vous êtes sur MacOS, aller à "*RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\APP_PIECES_D_OCCASIONS\DATABASE\connect_db_context_manager.py*" et décommenter la ligne 36
+  *  Si vous êtes sur MacOS, aller à ```RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\APP_PIECES_D_OCCASIONS\DATABASE\connect_db_context_manager.py``` et décommenter la ligne ```36```
 
 Voilà PyCharm est prêt à fonctionner !
 
 Maintenant il faut configurer phpMyAdmin pour que quelque chose s'affiche dans le projet, sinon c'est le vide...
 
 8. Ouvrir UwAmp ou Mamp ou Xampp et démarrer le serveur mysql si ce n'est pas déjà le cas.
+
 9. Dans un navigateur aller sur <http://localhost/mysql>, et se log avec
   - Username = root
   - Password = root
 
 
 10. Une fois entré dans phpMyAdmin, cliquer sur la petite maison puis sous "Importer".
-11. Cliquer sur "Choisir un fichier", une nouvelle fenêtre s'ouvre, aller sur
->"*..\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\APP_PIECES_D_OCCASIONS\DATABASE\ronzano_rocco_pieces_d_occasions_info1c_2020.sql*"
 
-  ou
->"*..\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\Docs\ronzano_rocco_pieces_d_occasions_info1c_2020.sql*"
+11. Cliquer sur ```Choisir un fichier```, une nouvelle fenêtre s'ouvre, aller sur
 
-  et finalement cliquer sur "Exécuter".
+```..\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\APP_PIECES_D_OCCASIONS\DATABASE\ronzano_rocco_pieces_d_occasions_info1c_2020.sql```
 
-Trop bien, le fichier sql à été importé !
+ou
+
+```..\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\Docs\ronzano_rocco_pieces_d_occasions_info1c_2020.sql```
+
+et finalement cliquer sur "Exécuter".
+
+Trop bien, le fichier sql a été importé !
 
 ##### --AFFICHAGE DU PROJET--
 
 1. Dans PyCharm, sous
->"*RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\run_mon_app.py*"
+```RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\run_mon_app.py```
 
-  Clique-droit sur "run_mon_app.py", dans le menu déroulant, Exécuter "Run 'run_mon_app'".
+  Clique-droit sur ```run_mon_app.py```, dans le menu déroulant, Exécuter ```Run 'run_mon_app'```.
 2. Dans le run de PyCharm, des ligne de codes défilent, et à la fin une ligne comportant <http://127.0.0.1:1148/>, cliquer sur celle-ci.
 3. Un nouvel onglet dans votre navigateur vient de s'ouvrir, c'est le projet !
 
