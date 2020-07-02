@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e16bab88-ce0c-46b7-9906-d20b2bef46dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/static/qr.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DATABASE/DELETE/delete_one_record_one_table.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DATABASE/INSERT/insert_one_table.py" beforeDir="false" />
@@ -36,11 +37,9 @@
       <change beforePath="$PROJECT_DIR$/../GENRES/select_all_genres.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GENRES/update_fixe_genre.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/DATABASE/NOM_PRENOM_SUJET_BD_104_2020.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/DATABASE/REQUETES_NOM_PRENOM_SUJET_BD_104.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/DATABASE/ronzano_rocco_pieces_d_occasions_info1c_2020.sql" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/DATABASE/ronzano_rocco_pieces_d_occasions_info1c_2020.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/DATABASE/connect_db_context_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/DATABASE/connect_db_context_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/ronzano_rocco_pieces_d_occasions_info1c_2020.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/ronzano_rocco_pieces_d_occasions_info1c_2020.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ZZZ_DEMOS_PYTHON/mon_premier_essai.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" />
     </list>
@@ -65,8 +64,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/static" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rocco\Documents\GitHub\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\APP_PIECES_D_OCCASIONS\static" />
+      <recent name="C:\Users\rocco\Documents\GitHub\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\APP_PIECES_D_OCCASIONS\DATABASE" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="run_mon_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -113,7 +118,9 @@
       <workItem from="1593604446434" duration="301000" />
       <workItem from="1593632348094" duration="3586000" />
       <workItem from="1593637250818" duration="5638000" />
-      <workItem from="1593665269034" duration="1150000" />
+      <workItem from="1593665269034" duration="2575000" />
+      <workItem from="1593694747458" duration="151000" />
+      <workItem from="1593712780068" duration="3040000" />
     </task>
     <servers />
   </component>
@@ -136,26 +143,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="195" key="GridCell.Tab.0.bottom" timestamp="1593643659758">
+    <state width="1877" height="195" key="GridCell.Tab.0.bottom" timestamp="1593718649316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2517" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-358.2560.1400@1920.-358.2560.1400" timestamp="1593528858517" />
-    <state width="1877" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593643659758" />
-    <state width="1877" height="195" key="GridCell.Tab.0.center" timestamp="1593643659758">
+    <state width="1877" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593718649316" />
+    <state width="1877" height="195" key="GridCell.Tab.0.center" timestamp="1593718649316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2517" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-358.2560.1400@1920.-358.2560.1400" timestamp="1593528858517" />
-    <state width="1877" height="195" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593643659758" />
-    <state width="1877" height="195" key="GridCell.Tab.0.left" timestamp="1593643659758">
+    <state width="1877" height="195" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593718649316" />
+    <state width="1877" height="195" key="GridCell.Tab.0.left" timestamp="1593718649316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2517" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-358.2560.1400@1920.-358.2560.1400" timestamp="1593528858517" />
-    <state width="1877" height="195" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593643659758" />
-    <state width="1877" height="195" key="GridCell.Tab.0.right" timestamp="1593643659758">
+    <state width="1877" height="195" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593718649316" />
+    <state width="1877" height="195" key="GridCell.Tab.0.right" timestamp="1593718649316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2517" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-358.2560.1400@1920.-358.2560.1400" timestamp="1593528858517" />
-    <state width="1877" height="195" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593643659758" />
+    <state width="1877" height="195" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593718649316" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1593458234811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -182,7 +189,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB$run_mon_app.coverage" NAME="run_mon_app Coverage Results" MODIFIED="1593665276785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB$run_mon_app.coverage" NAME="run_mon_app Coverage Results" MODIFIED="1593717122236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020$run_mon_app.coverage" NAME="run_mon_app Coverage Results" MODIFIED="1593527879672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

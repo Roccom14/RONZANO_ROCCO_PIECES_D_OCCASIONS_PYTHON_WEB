@@ -1,5 +1,5 @@
 # RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB
-Dossier GIT pour mon prof préféré &lt;3
+Dossier GIT pour mon prof préféré &#9825;
 
 -------------------------------------------------------------------------------
 
@@ -22,20 +22,23 @@ Maintenant que c'est installé il faut configurer !
 3. Ouvrir le projet RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB dans PyCharm, et configurer l'interpréteur python pour que le projet puisse fonctionner.
 4. Pour configurer l'interpréteur, aller sur "*File -> Settings -> Project: RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB -> Projet Interpreter*" cliquer sur le bouton molette et choisir "Add..".
 5. Sur la nouvelle fenêtre la sélection doit être sur "New environment" et cliquer sur "OK".
-6. Si besoin, une fenêtre demandant si on veut installer les packages du projet venant de "*requirements.txt*", cliquer sur oui.
+6. Si une fenêtre demande si on veut installer les packages du projet venant de "*requirements.txt*", cliquer sur oui.
+7. Sinon, aller dans à "*RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\requirements.txt*" et insatller les packages manquants au bon fonctionnement en passant la souris dessus et une petite ampoule apparaît, selectionner "install package [name_package]"
+
+  *  Si vous êtes sur MacOS, aller à "*RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\APP_PIECES_D_OCCASIONS\DATABASE\connect_db_context_manager.py*" et décommenter la ligne 36
 
 Voilà PyCharm est prêt à fonctionner !
 
 Maintenant il faut configurer phpMyAdmin pour que quelque chose s'affiche dans le projet, sinon c'est le vide...
 
-7. Ouvrir UwAmp ou Mamp ou Xampp et démarrer le serveur mysql si ce n'est pas déjà le cas.
-8. Dans un navigateur aller sur <http://localhost/mysql>, et se log avec
+8. Ouvrir UwAmp ou Mamp ou Xampp et démarrer le serveur mysql si ce n'est pas déjà le cas.
+9. Dans un navigateur aller sur <http://localhost/mysql>, et se log avec
   - Username = root
   - Password = root
 
 
-9. Une fois entré dans phpMyAdmin, cliquer sur la petite maison et sous "Importer".
-10. Cliquer sur "Choisir un fichier", une nouvelle fenêtre s'ouvre, aller sur
+10. Une fois entré dans phpMyAdmin, cliquer sur la petite maison puis sous "Importer".
+11. Cliquer sur "Choisir un fichier", une nouvelle fenêtre s'ouvre, aller sur
 >"*..\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\APP_PIECES_D_OCCASIONS\DATABASE\ronzano_rocco_pieces_d_occasions_info1c_2020.sql*"
 
   ou

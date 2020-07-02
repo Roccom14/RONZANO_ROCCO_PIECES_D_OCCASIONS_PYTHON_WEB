@@ -1,4 +1,4 @@
-# connect_db_context_manager.py
+# connect_db_context_manager (mac).py
 #
 # OM 2020.04.05 Classe pour se connecter à la base de donnée.
 #
@@ -32,6 +32,8 @@ class MaBaseDeDonnee():
                                                 user=self.user,
                                                 password=self.password,
                                                 db=self.db,
+                                                # Décommentez la ligne 36 si vous êtes sur MacOS
+                                                # unix_socket="/Applications/MAMP/tmp/mysql/mysql.sock",
                                                 cursorclass=pymysql.cursors.DictCursor,
                                                 autocommit=False)
             print("Avec CM BD  CONNECTÉE, TOUT va BIEN !! Dans le constructeur")
