@@ -36,17 +36,11 @@
       <change beforePath="$PROJECT_DIR$/../GENRES/select_all_genres.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GENRES/update_fixe_genre.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/STUFF/data_gestion_stuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/STUFF/data_gestion_stuff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/STUFF/routes_gestion_stuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/STUFF/routes_gestion_stuff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/USER/data_gestion_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/USER/data_gestion_user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/USER/routes_gestion_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/USER/routes_gestion_user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/stuff/stuff_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/stuff/stuff_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/stuff/stuff_afficher.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/stuff/stuff_afficher.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/user/user_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/user/user_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/user/user_afficher.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/user/user_afficher.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/user/user_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/user/user_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/user/user_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/user/user_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/user/user_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/templates/user/user_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/DATABASE/NOM_PRENOM_SUJET_BD_104_2020.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/DATABASE/REQUETES_NOM_PRENOM_SUJET_BD_104.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/DATABASE/ronzano_rocco_pieces_d_occasions_info1c_2020.sql" beforeDir="false" afterPath="$PROJECT_DIR$/APP_PIECES_D_OCCASIONS/DATABASE/ronzano_rocco_pieces_d_occasions_info1c_2020.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/ronzano_rocco_pieces_d_occasions_info1c_2020.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/ronzano_rocco_pieces_d_occasions_info1c_2020.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ZZZ_DEMOS_PYTHON/mon_premier_essai.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" />
     </list>
@@ -119,6 +113,7 @@
       <workItem from="1593604446434" duration="301000" />
       <workItem from="1593632348094" duration="3586000" />
       <workItem from="1593637250818" duration="5638000" />
+      <workItem from="1593665269034" duration="1150000" />
     </task>
     <servers />
   </component>
@@ -187,7 +182,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB$run_mon_app.coverage" NAME="run_mon_app Coverage Results" MODIFIED="1593637285521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB$run_mon_app.coverage" NAME="run_mon_app Coverage Results" MODIFIED="1593665276785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RONZANO_ROCCO_PIECES_D_OCCASIONS_INFO1C_2020$run_mon_app.coverage" NAME="run_mon_app Coverage Results" MODIFIED="1593527879672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

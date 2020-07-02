@@ -26,8 +26,10 @@ Maintenant que c'est installé il faut configurer !
 
 Voilà PyCharm est prêt à fonctionner !
 
+Maintenant il faut configurer phpMyAdmin pour que quelque chose s'affiche dans le projet, sinon c'est le vide...
+
 7. Ouvrir UwAmp ou Mamp ou Xampp et démarrer le serveur mysql si ce n'est pas déjà le cas.
-8. Dans un navigateur aller sur <http://localhost/mysql>, se log avec
+8. Dans un navigateur aller sur <http://localhost/mysql>, et se log avec
   - Username = root
   - Password = root
 
@@ -35,6 +37,9 @@ Voilà PyCharm est prêt à fonctionner !
 9. Une fois entré dans phpMyAdmin, cliquer sur la petite maison et sous "Importer".
 10. Cliquer sur "Choisir un fichier", une nouvelle fenêtre s'ouvre, aller sur
 >"*..\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\APP_PIECES_D_OCCASIONS\DATABASE\ronzano_rocco_pieces_d_occasions_info1c_2020.sql*"
+
+  ou
+>"*..\RONZANO_ROCCO_PIECES_D_OCCASIONS_PYTHON_WEB\Docs\ronzano_rocco_pieces_d_occasions_info1c_2020.sql*"
 
   et finalement cliquer sur "Exécuter".
 
@@ -61,3 +66,5 @@ PS: Si vous avez des soucis sur le bon déroulement de l'installation ou la conf
 - Linux -> [ici](blank)
 
 Ou par mail à <webmaster@ronzano.ch>
+
+L'Occaz' &#169;&#x2122; est une marque déposée de [Ronzano & Cie Fils Sàrl](https://ronzanoandcie.ch) &#169;&#x2122;
