@@ -79,7 +79,8 @@ Liste non exaustive d'erreurs :
 | Erreur | Etat erreur | Résolution |
 |:-------|:------------|:-----------|
 | Flash....BD NON CONNECTÉE. Erreur : Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée)    | Le serveur phpMyAdmin n'est pas allumé et/ou démarré | Allumer et démarrer le serveur PhpMyAdmin |
-| No python intrepreter found| interpréteur Python non ou mal configuré | Il faut aller vérifier la configuration de l'interpréteur python dans PyCharm |
-| Page dans le navigateur 127.0.0.1:1148 qui affiche "connection échouée" ou qui charge pas  | Le projet python n'est pas allumé et /ou démarré | il faut exécuter le "run_mon_app.py"  |
+| No python intrepreter found | Interpréteur Python non ou mal configuré | Il faut aller vérifier la configuration de l'interpréteur python dans PyCharm |
+| Page dans le navigateur 127.0.0.1:1148 qui affiche "connection échouée" ou qui charge pas  | Le projet python n'est pas allumé et /ou démarré | Il faut exécuter le "run_mon_app.py"  |
+| ça arrive... | Les packages de "requirements.txt sont pas ou mal installés" | Aller dans le fichier "requirements.txt" et installer chaque packages manquants ou mal installés |
 
 L'Occaz' &#169;&#x2122; est une marque déposée de [Ronzano & Cie Fils Sàrl](https://ronzanoandcie.ch) &#169;&#x2122;
