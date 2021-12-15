@@ -68,9 +68,9 @@ Hourra ! Le projet s'est affiché !
 
 PS: Si vous avez des soucis sur le bon déroulement de l'installation ou la configuration, voici les vidéos de demo:
 
-- Windows -> [ici](https://youtu.be/CWXDQitTEjo)
-- MacOS -> [ici](https://youtu.be/bR-7HLgltTI)
-- Linux -> [ici](https://youtu.be/dQw4w9WgXcQ)
+- Windows -> <a href="https://youtu.be/CWXDQitTEjo" target="_blank">ICI</a>
+- MacOS -> <a href="https://youtu.be/bR-7HLgltTI" target="_blank">ICI</a>
+- Linux -> <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">ICI</a>
 
 Ou par mail à <webmaster@ronzano.ch>
 
